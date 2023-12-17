@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .header {
+    display: none;
+  }
+}
+.header h6 {
+  margin: 0;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.icon {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 0.3rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+.bell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

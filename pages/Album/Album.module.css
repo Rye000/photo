@@ -1,0 +1,112 @@
+.data {
+  color: #ffffff;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .data {
+    text-align: left;
+    margin-left: 1rem;
+    margin-top: 3rem;
+  }
+}
+.data h1 {
+ 
+  font-size: 28px;
+}
+.data h4 {
+  
+  margin: 0;
+}
+
+.save {
+  margin-right: 0.5rem;
+}
+.album {
+  margin: 1rem;
+}
+
+.album span {
+  color: #ffffff;
+  
+  font-size: 24px;
+}
+.album span:hover {
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff,
+    0 0 20px #ffffff;
+}
+.album a {
+  text-decoration: none;
+}
+.photos {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+.photos img:hover {
+  opacity: 0.8;
+}
+
+.photo {
+  flex: 1 1 auto;
+  max-width: calc(25% - 10px);
+  margin: 5px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.album .photos img {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .album .photos img {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .album .photos img:first-child {
+    display: block;
+    max-width: calc(100%);
+    margin: 0;
+  }
+}
+/*動態路由*/
+.albumlist {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 1rem;
+}
+.albumlist img:hover {
+  opacity: 0.8;
+}
+.tltle {
+  color: #ffffff;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .albumlist {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .albumlist {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .album span{
+    font-size: 18px;
+  }
+  .tltle{
+    font-size: 20px;
+  }
+}
+.albumlist div img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+
+   

@@ -1,0 +1,95 @@
+
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  font-family: 'Michroma', sans-serif;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+.swal {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+.swalimg {
+  width: 40%;
+}
+.swal2-confirm {
+  display: none !important;
+}
+.swal2-cancel {
+  display: none !important;
+}
+.swal2-close {
+  box-shadow: none !important;
+}
+.swalfooter {
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  margin-top: 3rem;
+}
+.swaltitle h5 {
+  margin: 0;
+  text-align: left;
+  color: #cccccc;
+
+}
+.swaltitle h2 {
+  margin: 0;
+  text-align: left;
+  font-size: 16px;
+ 
+}
+.swalbtn {
+  display: flex;
+  gap: 1rem;
+}
+.swalbtn h5 {
+  border: 1px solid #ffffff;
+  padding: 0.5rem;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .swalfooter {
+    flex-direction: column;
+    margin: 0;
+  }
+  .swaltitle h2 {
+    font-size: 12px;
+  }
+  .swaltitle {
+    order: 2;
+  }
+  .swalbtn {
+    order: 1;
+    justify-content: flex-end;
+  }
+  .swal {
+    margin-top: 2rem;
+  }
+  .swal span {
+    font-size: 10px;
+  }
+
+  .swalimg {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .swal span {
+    font-size:9px;
+  }
+}
+.swal2-html-container {
+  margin: 0.5rem !important;
+}

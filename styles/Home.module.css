@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  min-height: 95vh; 
+  align-items: center; 
+  justify-content: center;
+}
+
+.login {
+  display: flex; 
+  flex: 0 1 auto; 
+  width: 100%; 
+  max-width: 1200px; 
+}
+
+.login > div {
+  flex: 1; 
+}
+
+.login > div:nth-child(2) {
+  flex: 2; 
+}
+.enter {
+  text-align: center;
+}
+.inp {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  background-color: black;
+  border: 2px solid #cccccc;
+  color: #ffffff;
+}
+.loginbtn {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  
+}
+.account {
+  color: #ffffff;
+}
+.twobtn {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.error{
+  color: red;
+  margin-bottom: 1rem;
+}
+
+
+@media (max-width: 768px) {
+  .login > div:first-child, .login > div:last-child {
+    display: none;
+  }
+  .login{
+    width: 95%;
+  }
+ 
+}
